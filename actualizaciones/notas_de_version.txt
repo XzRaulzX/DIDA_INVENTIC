@@ -1,0 +1,41 @@
+11 mayo 2020 : 13:00.
+
+        /PHPMailer
+                Carpeta creada que contiene las librerias github de la gestión de correo Electrónico.
+                
+        load.php
+                Modificado para incluir llamadas a la libreria PHPMailer.
+                
+        /includes/correo.php
+                Contiene las funciones necesarias para la gestión del envío de correos electrónicos. 
+                Presenta dos funciones posibles: 
+                
+                        Envia_Correo_Simple (@destinatario,asunto,cuerpo)
+                        Envia_Correo_Adjunto ("destinatario,asunto,cuerpo,adjunto,nombre_adjunto)	
+        /PHPMailer.php
+                    Modificado el conjunto de caracteres por defecto para correo en Español
+        correo.php
+                    Modificada la función para que por defecto tome el lenguaje Español
+        add_incidencias.php
+                    Modificado el asunto/cuerpo del correo enviado.
+                    Subsanado error usuario actual.  current_user()
+        super_menu.php
+                    Modificado menu de Superusuario para contemplar la opción de importación de profesores por lote.
+        1.- UTLIDADES
+
+ Importación de profesorado (importar_profesorado.php
+
+    Desde un fichero excel se importarán todos los profesores . 
+    La lista se puede extraer desde Seneca
+
+Listado de usuarios / claves (lista_usuarios.php)
+   
+   Listado de: NOMBRE | USUARIO | CLAVE | CORREO del profesorado
+   (Imprime un pdf)
+
+Envío de claves a usuarios (enviar_info.php)
+
+   Buscar un profesor
+   Seleccionar profesor
+   Enviar por correo su información de usuario (nombre, usuario, clave, correo)
+                    
